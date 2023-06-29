@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"⛔️ I don't know what to run 🤷\" && exit 1",
     "build": "esbuild src/index.jsx --bundle --outfile=dist/main.js",
-    "start": "http-server dist -p 3000"
+    "start": "http-server dist -p 3000",
+    "watch": "esbuild --bundle src/index.jsx --outfile=dist/main.js --watch"
   },
   "keywords": [],
   "author": "",
