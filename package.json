@@ -1,0 +1,16 @@
+{
+  "name": "quote-of-the-day",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"⛔️ I don't know what to run 🤷\" && exit 1",
+    "start": "echo 🕞: `date`"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}
