@@ -1,3 +1,4 @@
+import React from 'react';
 const App = () => {
   return (<div>
     <p className="content">If you want to lift yourself up, lift up someone else.</p>
