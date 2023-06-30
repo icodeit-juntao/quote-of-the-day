@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"⛔️ I don't know what to run 🤷\" && exit 1",
     "e2e": "cypress run --spec cypress/e2e/*.spec.cy.js",
     "build": "esbuild src/index.jsx --bundle --outfile=dist/main.js",
     "start": "http-server dist -p 3000",
