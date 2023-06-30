@@ -27,6 +27,12 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Upload pages artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          name: github-pages
+          path: dist/
+
       - name: Packaging
         uses: actions/upload-artifact@v3
         with:
@@ -46,3 +52,17 @@ jobs:
           build: npm run build
           start: npm start
           command: npm run e2e
+
+  deploy:
+    name: Deploy Application
+    runs-on: ubuntu-latest
+    needs: cypress
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
