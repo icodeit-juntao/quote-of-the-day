@@ -7,13 +7,20 @@
     "e2e": "cypress run --spec cypress/e2e/*.spec.cy.js",
     "build": "esbuild src/index.jsx --bundle --outfile=dist/main.js",
     "start": "http-server dist -p 3000",
-    "watch": "esbuild --bundle src/index.jsx --outfile=dist/main.js --watch"
+    "watch": "esbuild --bundle src/index.jsx --outfile=dist/main.js --watch",
+    "lint": "eslint src/"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "cypress": "^12.16.0",
+    "eslint": "^8.43.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "http-server": "^14.1.1"
   },
   "dependencies": {
