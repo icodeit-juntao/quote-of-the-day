@@ -4,4 +4,25 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+:root {
+  --quote-container-width: 450px;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+}
+
+.quote {
+  width: var(--quote-container-width);
+  color: white;
+  margin: 2rem 0;
+  padding: 3rem;
+  font-size: 2rem;
+  font-family: 'Playfair Display', serif;
+  background: linear-gradient(135deg, #E55D87 0%, #5FC3E4 100%);
+  border-radius: 8px;
+  font-weight: bolder;
 }

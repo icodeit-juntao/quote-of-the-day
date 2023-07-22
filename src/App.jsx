@@ -11,11 +11,12 @@ const App = () => {
   };
 
   return (
-    <>
+    <div>
+      <h1>Quote of the day</h1>
       {loading && <div>loading...</div>}
       {!loading && <Quote quote={quotes[index]} />}
       <button onClick={clickHandler}>next</button>
-    </>
+    </div>
   );
 };
 
